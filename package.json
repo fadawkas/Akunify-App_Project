@@ -1,0 +1,27 @@
+{
+  "name": "accountingapp",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-electron": "electron .",
+    "start": "concurrently \"npm run start-frontend\" \"npm run start-backend\" \"npm run start-electron\"",
+    "start-frontend": "npm --prefix frontend run dev",
+    "start-backend": "npm --prefix backend run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "electron": "^33.2.1"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.5.1",
+    "electron-is-dev": "^3.0.1",
+    "react-datepicker": "^7.6.0",
+    "react-redux": "^9.2.0"
+  }
+}
